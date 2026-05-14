@@ -146,7 +146,7 @@ pip install scipub
 pip install "scipub[full]"
 
 # Bleeding edge
-pip install "scipub[full] @ git+https://github.com/spirit/scipub.git"
+pip install "scipub[full] @ git+https://github.com/Goblin1024/scipub.git"
 ```
 
 ### Then, in Python:

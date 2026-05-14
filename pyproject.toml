@@ -46,9 +46,9 @@ dev = [
 ]
 
 [project.urls]
-homepage = "https://github.com/spirit/scipub"
-repository = "https://github.com/spirit/scipub"
-documentation = "https://github.com/spirit/scipub#readme"
+homepage = "https://github.com/Goblin1024/scipub"
+repository = "https://github.com/Goblin1024/scipub"
+documentation = "https://github.com/Goblin1024/scipub#readme"
 
 [tool.setuptools.packages.find]
 where = ["src"]
