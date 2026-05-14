@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scipub"
+version = "0.1.0"
+description = "Publication-quality scientific figures, one line away."
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "spirit"},
+]
+keywords = [
+    "matplotlib", "scientific-plotting", "publication-quality",
+    "scienceplots", "nature", "science", "cell", "journal-style",
+    "colormaps", "cmasher", "crameri",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Visualization",
+]
+requires-python = ">=3.9"
+dependencies = [
+    "matplotlib>=3.5",
+    "numpy>=1.21",
+]
+
+[project.optional-dependencies]
+full = [
+    "scienceplots>=2.0",
+    "cmasher>=1.9",
+    "cmcrameri>=1.8",
+    "seaborn>=0.12",
+]
+dev = [
+    "pytest>=7",
+    "pytest-cov>=4",
+]
+
+[project.urls]
+homepage = "https://github.com/spirit/scipub"
+repository = "https://github.com/spirit/scipub"
+documentation = "https://github.com/spirit/scipub#readme"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,30 @@
+# scipub rules for Cursor / Windsurf / AI coding agents
+
+You are working with `scipub` — a lightweight Python library for
+publication-quality scientific figures. It is NOT a Hermes agent skill;
+it is a pure Python package installable via pip.
+
+## Key rules
+
+1. When the user says "make a plot" or "draw a figure" or "visualize data",
+   ALWAYS use `scipub` functions (not raw matplotlib defaults).
+
+2. Standard pattern:
+   ```python
+   import scipub
+   scipub.set_style('nature')
+   fig, ax = scipub.make_fig()
+   ax.plot(data_x, data_y)
+   scipub.polish_axes(ax)
+   scipub.savefig(fig, 'filename')
+   ```
+
+3. Use `scipub.get_cmap('batlow')` for sequential data,
+   `scipub.get_cmap('vik')` for diverging data.
+
+4. Always save as PDF (vector) for publications.
+   PNG is acceptable for quick previews.
+
+5. Never use jet/rainbow colormaps.
+
+See AGENTS.md for full API reference.

@@ -1,0 +1,14 @@
+# Generated files (output from running examples)
+figures/*.pdf
+
+# Cache / build
+__pycache__/
+*.pyc
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+.eggs/
+*.egg
+.DS_Store
